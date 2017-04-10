@@ -11,3 +11,4 @@
 1. [官方简易教程](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     * [组件](https://mp.weixin.qq.com/debug/wxadoc/dev/component/)
     * [API](https://mp.weixin.qq.com/debug/wxadoc/dev/api/)
+    * [框架](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html)
