@@ -12,3 +12,4 @@
     * [组件](https://mp.weixin.qq.com/debug/wxadoc/dev/component/)
     * [API](https://mp.weixin.qq.com/debug/wxadoc/dev/api/)
     * [框架](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html)
+2. [Wafer - 快速构建具备弹性能力的微信小程序](./docs/wafer.md)
