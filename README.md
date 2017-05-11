@@ -2,17 +2,19 @@
 
 ## 常见问题
 
-- [登陆流程是怎样的？](login-flow.md)
-- [支付流程是怎样的？](payment.md)
-- [如何做兼容处理？](compatibility.js)
+* [登陆流程是怎样的？](login-flow.md)
+* [支付流程是怎样的？](payment.md)
+* [如何做兼容处理？](compatibility.js)
 
 ## 文档
 
-1. [官方简易教程](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+* [官方简易教程](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     * [组件](https://mp.weixin.qq.com/debug/wxadoc/dev/component/)
     * [API](https://mp.weixin.qq.com/debug/wxadoc/dev/api/)
     * [框架](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html)
-2. [Wafer - 快速构建具备弹性能力的微信小程序](./docs/wafer.md)
+* [Wafer - 快速构建具备弹性能力的微信小程序](./docs/wafer.md)
+* [TalkingData 微信小程序统计 SDK](http://doc.talkingdata.com/posts/484)
+
 
 ## Resources
 
