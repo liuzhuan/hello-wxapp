@@ -16,4 +16,7 @@
 
 ## Resources
 
-1. [awesome weapp](https://github.com/justjavac/awesome-wechat-weapp)
+* [awesome weapp](https://github.com/justjavac/awesome-wechat-weapp)
+* [weui-wxss](https://github.com/weui/weui-wxss)
+* [zanui-weapp](https://github.com/youzan/zanui-weapp)
+* [Wafer client sdk](https://github.com/tencentyun/wafer-client-sdk)
