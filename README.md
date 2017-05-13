@@ -5,6 +5,7 @@
 * [登陆流程是怎样的？](login-flow.md)
 * [支付流程是怎样的？](payment.md)
 * [如何做兼容处理？](compatibility.js)
+* [如何编写小程序的 .editorconfig?](./docs/editorconfig.md)
 
 ## 文档
 
