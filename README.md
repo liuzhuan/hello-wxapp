@@ -2,10 +2,12 @@
 
 ## 常见问题
 
-* [登陆流程是怎样的？](login-flow.md)
-* [支付流程是怎样的？](payment.md)
-* [如何做兼容处理？](compatibility.js)
+* [登陆流程是怎样的？](./docs/login-flow.md)
+* [支付流程是怎样的？](./docs/payment.md)
+* [如何做兼容处理？](./scripts/compatibility.js)
 * [如何编写小程序的 .editorconfig?](./docs/editorconfig.md)
+* [How to import and use template?](./docs/wxml-import-include.md)
+* [What is BLE?](./docs/what-is-BLE.md)
 
 ## 文档
 
