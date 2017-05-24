@@ -9,6 +9,7 @@
 * [How to import and use template?](./docs/wxml-import-include.md)
 * [What is BLE?](./docs/what-is-BLE.md)
 * [小程序的坑](./docs/pits/README.md)
+* [What's the differences between event.target and event.currentTarget?](./docs/target-vs-currentTarget.md)
 
 ## 文档
 
