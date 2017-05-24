@@ -27,3 +27,4 @@
 * [weui-wxss](https://github.com/weui/weui-wxss)
 * [zanui-weapp](https://github.com/youzan/zanui-weapp)
 * [Wafer client sdk](https://github.com/tencentyun/wafer-client-sdk)
+* [微信小程序联盟](http://www.wxapp-union.com/)
