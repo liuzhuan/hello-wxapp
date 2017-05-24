@@ -8,6 +8,7 @@
 * [如何编写小程序的 .editorconfig?](./docs/editorconfig.md)
 * [How to import and use template?](./docs/wxml-import-include.md)
 * [What is BLE?](./docs/what-is-BLE.md)
+* [小程序的坑](./docs/pits/README.md)
 
 ## 文档
 
