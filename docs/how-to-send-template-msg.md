@@ -1,6 +1,6 @@
 # 如何发送模板消息？
 
-[![template msg](../assets/template-msg.png)](../assets/template-msg.png)
+[![template msg](../assets/template-msg.png)](https://raw.githubusercontent.com/liuzhuan/wx-app/master/assets/template-msg.png)
 
 小程序前端可以通过设置表单获取 `formId`，发送给后台。后台通过 `formId`, `openID` 等数据向特定用户发送模板消息。
 
