@@ -10,6 +10,7 @@
 * [What is BLE?](./docs/what-is-BLE.md)
 * [小程序的坑](./docs/pits/README.md)
 * [What's the differences between event.target and event.currentTarget?](./docs/target-vs-currentTarget.md)
+* [如何发送模板消息？](./docs/how-to-send-template-msg.md)
 
 ## 文档
 
