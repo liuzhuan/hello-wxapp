@@ -11,6 +11,7 @@
 * [小程序的坑](./docs/pits/README.md)
 * [What's the differences between event.target and event.currentTarget?](./docs/target-vs-currentTarget.md)
 * [如何发送模板消息？](./docs/how-to-send-template-msg.md)
+* [如何进行自定义数据统计？](./docs/how-to-make-custom-data-analysis.md)
 
 ## 文档
 
