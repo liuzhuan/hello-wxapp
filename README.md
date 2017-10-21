@@ -1,31 +1,23 @@
-# 微信小程序信息汇总
+# 微信小程序简明入门手册
 
-## 常见问题
+## 什么是微信小程序？
 
-* [登陆流程是怎样的？](./docs/login-flow.md)
-* [支付流程是怎样的？](./docs/payment.md)
-* [如何做兼容处理？](./scripts/compatibility.js)
-* [如何编写小程序的 .editorconfig?](./docs/editorconfig.md)
-* [How to import and use template?](./docs/wxml-import-include.md)
-* [What is BLE?](./docs/what-is-BLE.md)
-* [小程序的坑](./docs/pits/README.md)
-* [What's the differences between event.target and event.currentTarget?](./docs/target-vs-currentTarget.md)
-* [如何发送模板消息？](./docs/how-to-send-template-msg.md)
-* [如何进行自定义数据统计？](./docs/how-to-make-custom-data-analysis.md)
-* [ES6 API 兼容性如何？](./docs/es6-compatibility/README.md)
+官方的解释：
 
-## 文档
+> 小程序是一种新的开放能力，开发者可以快速地开发一个小程序。小程序可以在微信内被便捷地获取和传播，同时具有出色的使用体验。
 
+2016年11月3日，微信公众平台小程序开放公测。
+
+## 参考资料
+
+- https://mp.weixin.qq.com/cgi-bin/wx 微信小程序
+- https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&announce_id=1478163659&version=15&lang=zh_CN 微信公众平台小程序开放公测
 * [官方简易教程](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     * [组件](https://mp.weixin.qq.com/debug/wxadoc/dev/component/)
     * [API](https://mp.weixin.qq.com/debug/wxadoc/dev/api/)
     * [框架](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html)
-* [Wafer - 快速构建具备弹性能力的微信小程序](./docs/wafer.md)
+* [Wafer - 快速构建具备弹性能力的微信小程序](./content/wafer.md)
 * [TalkingData 微信小程序统计 SDK](http://doc.talkingdata.com/posts/484)
-
-
-## Resources
-
 * [awesome weapp](https://github.com/justjavac/awesome-wechat-weapp)
 * [weui-wxss](https://github.com/weui/weui-wxss)
 * [zanui-weapp](https://github.com/youzan/zanui-weapp)
