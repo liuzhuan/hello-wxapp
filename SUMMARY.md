@@ -9,5 +9,5 @@
 * [小程序的坑](./content/pits/README.md)
 * [event.target 和 event.currentTarget](./content/target-vs-currentTarget.md)
 * [模板消息](./content/how-to-send-template-msg.md)
-* [自定义数据统计](./content/how-to-make-custom-data-analysis.md)
+* [自定义数据统计](./content/analysis/README.md)
 * [ES6 兼容性](./content/es6-compatibility/README.md)
