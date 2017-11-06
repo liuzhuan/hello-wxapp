@@ -8,6 +8,8 @@
 
 2016年11月3日，微信公众平台小程序开放公测。
 
+[开始阅读](./SUMMARY.md)
+
 ## 参考资料
 
 - https://mp.weixin.qq.com/cgi-bin/wx 微信小程序
