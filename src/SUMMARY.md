@@ -3,6 +3,7 @@
 - [登陆流程](./content/login-flow.md)
 - [支付流程](./content/payment.md)
 - [画布](./content/canvas/README.md)
+- [WXML 节点信息](./content/wxml-node/README.md)
 - [兼容处理](./content/compatibility.md)
 - [代码风格](./content/editorconfig.md)
 - [模板](./content/wxml-import-include.md)
