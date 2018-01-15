@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>WXML 节点信息 · GitBook</title>
+        <title>高度数值错误 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../compatibility.html" />
+    <link rel="next" href="../target-vs-currentTarget.html" />
     
     
-    <link rel="prev" href="../canvas/" />
+    <link rel="prev" href="longtap-vs-tap.html" />
     
 
     </head>
@@ -141,9 +141,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="../wxml-node/">
             
-                <a href="./">
+                <a href="../wxml-node/">
             
                     
                     WXML 节点信息
@@ -206,9 +206,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../pits/">
+        <li class="chapter " data-level="1.10" data-path="./">
             
-                <a href="../pits/">
+                <a href="./">
             
                     
                     小程序的坑
@@ -220,9 +220,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="../pits/close-page-data-transmission.html">
+        <li class="chapter " data-level="1.10.1" data-path="close-page-data-transmission.html">
             
-                <a href="../pits/close-page-data-transmission.html">
+                <a href="close-page-data-transmission.html">
             
                     
                     页面关闭数据传递
@@ -233,9 +233,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.2" data-path="../pits/complex-data-transmission.html">
+        <li class="chapter " data-level="1.10.2" data-path="complex-data-transmission.html">
             
-                <a href="../pits/complex-data-transmission.html">
+                <a href="complex-data-transmission.html">
             
                     
                     复杂数据的传递
@@ -246,9 +246,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.3" data-path="../pits/longtap-vs-tap.html">
+        <li class="chapter " data-level="1.10.3" data-path="longtap-vs-tap.html">
             
-                <a href="../pits/longtap-vs-tap.html">
+                <a href="longtap-vs-tap.html">
             
                     
                     长按与点击事件冲突
@@ -259,9 +259,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.4" data-path="../pits/systeminfo-height.html">
+        <li class="chapter active" data-level="1.10.4" data-path="systeminfo-height.html">
             
-                <a href="../pits/systeminfo-height.html">
+                <a href="systeminfo-height.html">
             
                     
                     高度数值错误
@@ -398,7 +398,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >WXML 节点信息</a>
+        <a href="../.." >高度数值错误</a>
     </h1>
 </div>
 
@@ -413,84 +413,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="wxml-&#x8282;&#x70B9;&#x4FE1;&#x606F;">WXML &#x8282;&#x70B9;&#x4FE1;&#x606F;</h2>
-<p>&#x6240;&#x6709; API &#x51FD;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">/** return a SelectorQuery instance */</span>
-<span class="hljs-keyword">var</span> query = wx.createSelectorQuery()
-query.select(<span class="hljs-string">&apos;#the-id&apos;</span>).boundingClientRect()
-query.selectViewport().scrollOffset()
-query.exec(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-  res[<span class="hljs-number">0</span>].top <span class="hljs-comment">// the top border location</span>
-  res[<span class="hljs-number">1</span>].scrollTop <span class="hljs-comment">// viewport&apos;s vertical scroll section</span>
-})
-</code></pre>
-<p>SelectorQuery &#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x5217;&#x8868;&#xFF1A;</p>
-<blockquote>
-<p>lib 1.6+</p>
-</blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">/** return component query */</span>
-selectorQuery.in(component)
-
-<span class="hljs-comment">/** return a NodesRef instance, return only the first matched node */</span>
-selectorQuery.select(selector)
-
-<span class="hljs-comment">/** return all the matched nodes */</span>
-selectorQuery.selectAll(selector)
-
-<span class="hljs-comment">/** return a NodesRef instance about current viewport */</span>
-selectorQuery.selectViewport()
-
-<span class="hljs-comment">/** get bounding box */</span>
-nodesRef.boundingClientRect(callback)
-wx.createSelectorQuery().select(<span class="hljs-string">&apos;#the-id&apos;</span>).boundingClientRect(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">rect</span>)</span>{
-  rect.id,
-  rect.dataset,
-  rect.left,
-  rect.right,
-  rect.top,
-  rect.bottom,
-  rect.width,
-  rect.height
-})
-
-nodesRef.scrollOffset(callback)
-wx.createSelectorQuery().selectViewport().scrollOffset(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>)</span>{
-  res.id,
-  res.dataset,
-  res.scrollLeft,
-  res.scrollTop
-}).exec()
-
-nodesRef.fields(fields, callback)
-wx.createSelectorQuery().select(<span class="hljs-string">&apos;#the-id&apos;</span>).fields({
-  dataset: <span class="hljs-literal">true</span>,
-  size: <span class="hljs-literal">true</span>,
-  scrollOffset: <span class="hljs-literal">true</span>,
-  properties: [<span class="hljs-string">&apos;scrollX&apos;</span>, <span class="hljs-string">&apos;scrollY&apos;</span>]
-}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-  res.dataset,
-  res.width,
-  res.height,
-  res.scrollLeft,
-  res.scrollTop,
-  res.scrollX,
-  res.scrollY
-}).exec()
-
-selectorQuery.exec(callback)
-</code></pre>
-<p>selector &#x652F;&#x6301;&#x7684;&#x8BED;&#x6CD5;&#x5305;&#x62EC;&#xFF1A;</p>
-<ul>
-<li><code>#the-id</code></li>
-<li><code>.a-class.another-class</code></li>
-<li><code>.the-parent &gt; .the-child</code></li>
-<li><code>.the-ancestor .the-descendant</code></li>
-<li><code>.the-ancestor &gt;&gt;&gt; .the-descendant</code></li>
-<li><code>#a-node, .some-other-nodes</code></li>
-</ul>
+                                <h2 id="wxgetsysteminfosync-&#x83B7;&#x53D6;&#x7684;&#x5C4F;&#x5E55;&#x9AD8;&#x5EA6;&#x6709;&#x95EE;&#x9898;"><code>wx.getSystemInfoSync()</code> &#x83B7;&#x53D6;&#x7684;&#x5C4F;&#x5E55;&#x9AD8;&#x5EA6;&#x6709;&#x95EE;&#x9898;</h2>
+<p>&#x636E; <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html#wxgetsysteminfosync" target="_blank">api</a> &#x4ECB;&#x7ECD;&#xFF0C;<code>wx.getSystemInfoSync().windowHeight</code> &#x8FD4;&#x56DE;&#x53EF;&#x4F7F;&#x7528;&#x7A97;&#x53E3;&#x9AD8;&#x5EA6;&#x3002;</p>
+<p>&#x5728;&#x771F;&#x673A;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x53D1;&#x73B0;&#x5C0F;&#x7C73;&#x3001;vivo &#x7B49;&#x5B89;&#x5353;&#x624B;&#x673A;&#x4E0A;&#x591A;&#x6B21;&#x8FD4;&#x56DE;&#x7684; <code>windowHeight</code> &#x503C;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x5B98;&#x65B9;&#x4E5F;&#x786E;&#x8BA4;&#x8FD9;&#x662F;<a href="https://developers.weixin.qq.com/blogdetail?action=get_post_info&amp;docid=000cc0f09dc758077326b9a1451800&amp;highline=getSystemInfoSync&amp;token=&amp;lang=zh_CN" target="_blank">&#x5DF2;&#x77E5;&#x95EE;&#x9898;</a>&#x3002;</p>
+<h3 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x89E3;&#x51B3;&#x65B9;&#x6848;</h3>
+<p>&#x65B9;&#x6848;2&#xFF0C;3&#x5F85;&#x9A8C;&#x8BC1;</p>
+<p>&#x65B9;&#x6848;&#x4E00;&#xFF1A;&#x5EF6;&#x8FDF; 600ms &#x8BFB;&#x53D6;</p>
+<p>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;<code>wx.createSelectorQuery</code> &#x7684; <code>selectViewport</code> &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x663E;&#x793A;&#x533A;&#x57DF;&#x7684;&#x5C3A;&#x5BF8;</p>
+<p>&#x65B9;&#x6848;&#x4E09;&#xFF1A;&#x7ED9;page&#x8BBE;&#x7F6E;&#x5BBD;&#x9AD8;100%,&#x7136;&#x540E;&#x7ED9;&#x91CC;&#x9762;&#x7684;&#x67D0;&#x4E2A;&#x5B50;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x5BBD;&#x9AD8;100%&#xFF0C;&#x83B7;&#x53D6;&#x5230;&#x8BE5;&#x5143;&#x7D20;&#x7684;&#x9AD8;&#x5EA6;&#x3002;</p>
 <h2 id="ref">REF</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html" target="_blank">WXML&#x8282;&#x70B9;&#x4FE1;&#x606F;API</a></li>
+<li><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html#wxgetsysteminfosync" target="_blank">&#x8BBE;&#x5907; API - &#x5C0F;&#x7A0B;&#x5E8F;</a></li>
+<li><a href="https://developers.weixin.qq.com/blogdetail?action=get_post_info&amp;docid=000cc0f09dc758077326b9a1451800&amp;highline=getSystemInfoSync&amp;token=&amp;lang=zh_CN" target="_blank">wx.getSystemInfoSync()&#x83B7;&#x53D6;&#x5230;&#x7684;&#x9AD8;&#x5EA6;&#x6709;&#x95EE;&#x9898; - &#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x8BBA;&#x575B;</a></li>
 </ul>
 
                                 
@@ -519,12 +453,12 @@ selectorQuery.exec(callback)
 
             
                 
-                <a href="../canvas/" class="navigation navigation-prev " aria-label="Previous page: 画布">
+                <a href="longtap-vs-tap.html" class="navigation navigation-prev " aria-label="Previous page: 长按与点击事件冲突">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../compatibility.html" class="navigation navigation-next " aria-label="Next page: 兼容处理">
+                <a href="../target-vs-currentTarget.html" class="navigation navigation-next " aria-label="Next page: event.target 和 event.currentTarget">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -535,7 +469,7 @@ selectorQuery.exec(callback)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WXML 节点信息","level":"1.5","depth":1,"next":{"title":"兼容处理","level":"1.6","depth":1,"path":"content/compatibility.md","ref":"./content/compatibility.md","articles":[]},"previous":{"title":"画布","level":"1.4","depth":1,"path":"content/canvas/README.md","ref":"./content/canvas/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"content/wxml-node/README.md","mtime":"2018-01-15T05:26:37.260Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T05:57:30.239Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"高度数值错误","level":"1.10.4","depth":2,"next":{"title":"event.target 和 event.currentTarget","level":"1.11","depth":1,"path":"content/target-vs-currentTarget.md","ref":"./content/target-vs-currentTarget.md","articles":[]},"previous":{"title":"长按与点击事件冲突","level":"1.10.3","depth":2,"path":"content/pits/longtap-vs-tap.md","ref":"./content/pits/longtap-vs-tap.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"content/pits/systeminfo-height.md","mtime":"2018-01-15T05:57:17.245Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T05:57:30.239Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
