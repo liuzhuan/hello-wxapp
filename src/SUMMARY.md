@@ -1,5 +1,7 @@
 # 目录
 
+- [api](./api/README.md)
+  - [打开 App](./api/launchApp.md)
 - [登陆流程](./content/login-flow.md)
 - [支付流程](./content/payment.md)
 - [画布](./content/canvas/README.md)
