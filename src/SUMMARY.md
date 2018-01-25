@@ -20,4 +20,8 @@
 - [async/await](./content/async-await/README.md)
 - [自定义组件](./framework/custom-component/README.md)
   - [组件模版和样式](./framework/custom-component/wxml-wxss.md)
+  - [Component 构造器](./framework/custom-component/component.md)
+  - [组件事件](./framework/custom-component/events.md)
+  - [behaviors](./framework/custom-component/behaviors.md)
+  - [组件间关系](./framework/custom-component/relations.md)
 - [参考资料](./REF.md)
