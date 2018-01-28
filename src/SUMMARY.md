@@ -15,6 +15,7 @@
   - [复杂数据的传递](./content/pits/complex-data-transmission.md)
   - [长按与点击事件冲突](./content/pits/longtap-vs-tap.md)
   - [高度数值错误](./content/pits/systeminfo-height.md)
+  - [setTimeout](./content/pits/settimeout.md)
 - [event.target 和 event.currentTarget](./content/target-vs-currentTarget.md)
 - [模板消息](./content/how-to-send-template-msg.md)
 - [自定义数据统计](./content/analysis/README.md)
