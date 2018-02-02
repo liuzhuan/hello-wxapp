@@ -27,4 +27,5 @@
   - [组件事件](./framework/custom-component/events.md)
   - [behaviors](./framework/custom-component/behaviors.md)
   - [组件间关系](./framework/custom-component/relations.md)
+- [更新日志](./devtools/changelog.md)
 - [参考资料](./REF.md)
