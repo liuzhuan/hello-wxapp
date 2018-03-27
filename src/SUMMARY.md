@@ -9,6 +9,7 @@
     - [behaviors](./framework/custom-component/behaviors.md)
     - [组件间关系](./framework/custom-component/relations.md)
   - [分包加载](./framework/subpackages/README.md)
+  - [多线程](./framework/workers/README.md)
 - [api](./api/README.md)
   - [打开 App](./api/launchApp.md)
   - [录音管理](./api/getRcorderManager.md)
