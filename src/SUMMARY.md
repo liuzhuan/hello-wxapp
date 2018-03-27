@@ -22,6 +22,7 @@
 - [自定义数据统计](./content/analysis/README.md)
 - [ES6 兼容性](./content/es6-compatibility/README.md)
 - [async/await](./content/async-await/README.md)
+- [WXS 脚本](./framework/view/wxs/README.md)
 - [自定义组件](./framework/custom-component/README.md)
   - [组件模版和样式](./framework/custom-component/wxml-wxss.md)
   - [Component 构造器](./framework/custom-component/component.md)
