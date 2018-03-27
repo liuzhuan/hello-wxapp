@@ -1,5 +1,14 @@
 # 目录
 
+- 框架
+  - [WXS 脚本](./framework/view/wxs/README.md)
+  - [自定义组件](./framework/custom-component/README.md)
+    - [组件模版和样式](./framework/custom-component/wxml-wxss.md)
+    - [Component 构造器](./framework/custom-component/component.md)
+    - [组件事件](./framework/custom-component/events.md)
+    - [behaviors](./framework/custom-component/behaviors.md)
+    - [组件间关系](./framework/custom-component/relations.md)
+  - [分包加载](./framework/subpackages/README.md)
 - [api](./api/README.md)
   - [打开 App](./api/launchApp.md)
   - [录音管理](./api/getRcorderManager.md)
@@ -22,12 +31,5 @@
 - [自定义数据统计](./content/analysis/README.md)
 - [ES6 兼容性](./content/es6-compatibility/README.md)
 - [async/await](./content/async-await/README.md)
-- [WXS 脚本](./framework/view/wxs/README.md)
-- [自定义组件](./framework/custom-component/README.md)
-  - [组件模版和样式](./framework/custom-component/wxml-wxss.md)
-  - [Component 构造器](./framework/custom-component/component.md)
-  - [组件事件](./framework/custom-component/events.md)
-  - [behaviors](./framework/custom-component/behaviors.md)
-  - [组件间关系](./framework/custom-component/relations.md)
 - [更新日志](./devtools/changelog.md)
 - [参考资料](./REF.md)
