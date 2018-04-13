@@ -20,7 +20,7 @@ Page({
 })
 ```
 
-进入页面，`onLoad` 生命周期执行之前，`data.id` 为空，`web-view` 渲染的页面是 `http://example.com/id=`。此时会导致页面异常。如果异常导致页面阻塞（比如，弹出 `alert` 对话框），会妨碍 `onLoad` 的执行，从而导致异常一直保持。
+进入页面，`onLoad` 生命周期执行之前，`data.id` 为空，`web-view` 渲染的页面是 `http://example.com/id=`。此时可能会导致页面异常。如果异常造成页面阻塞（比如，弹出 `alert` 对话框），会妨碍 `onLoad` 的执行，从而异常会持续保持。
 
 ## 解决方案
 
