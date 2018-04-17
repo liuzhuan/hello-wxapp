@@ -33,5 +33,6 @@
 - [自定义数据统计](./content/analysis/README.md)
 - [ES6 兼容性](./content/es6-compatibility/README.md)
 - [async/await](./content/async-await/README.md)
+- [腾讯云配置开发](./qcloud/README.md)
 - [更新日志](./devtools/changelog.md)
 - [参考资料](./REF.md)
