@@ -12,7 +12,7 @@
 <form report-submit="true" bindsubmit="formSubmit">
     <input name="foo" type="text" />
     ...
-    <button formSubmit="submit">SUBMIT</button>
+    <button formType="submit">SUBMIT</button>
 </form>
 ```
 
