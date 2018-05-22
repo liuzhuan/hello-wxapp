@@ -39,6 +39,18 @@ GCJ-02 是由中国国家测绘局（G表示Guojia国家，C表示Cehui测绘，
 
 所有的电子地图、导航设备，都需要加入国家保密插件。第一步，地图公司测绘地图，测绘完成后，送到国家测绘局，将真实坐标的电子地图，加密成“火星坐标”，这样的地图才是可以出版和发布的，然后才可以让 GPS 公司处理。第二步，所有的 GPS 公司，只要需要汽车导航的，需要用到导航电子地图的，都需要在软件中加入国家保密算法，将 COM 口读出来的真实的坐标信号，加密转换成国家要求的保密的坐标。这样，GPS 导航仪和导航电子地图就可以完全匹配，GPS 也就可以正常工作了。
 
+### BD09
+
+使用百度地图的服务，需使用 BD09 坐标。
+
+若使用非 BD09 坐标、未经过坐标转换（非 BD09 转成 BD09 ）直接叠加在地图上，地图展示位置会偏移，因此通过其他坐标（WGS84、GCJ02）调用服务时，需先将其他坐标转换为 BD09 。
+
+### 小结
+
+- `WGS84`：为一种大地坐标系，也是目前广泛使用的 GPS 全球卫星定位系统使用的坐标系。
+- `GCJ02`：又称火星坐标系，是由中国国家测绘局制定的地理坐标系统，是由 WGS84 加密后得到的坐标系。
+- `BD09`：为百度坐标系，在 GCJ02 坐标系基础上再次加密。其中 `bd09ll` 表示百度经纬度坐标，`bd09mc` 表示百度墨卡托米制坐标。
+
 ## 组件
 
 具体参数详见[地图组件文档][component]。常用的属性有：
@@ -48,6 +60,8 @@ id: String 用于指定地图 ID
 show-location: Boolean 显示带有方向的当前定位点
 markers: Array 标记点
 ```
+
+`map` 组件使用的经纬度是火星坐标系。从百度地图点击的坐标点有偏移。
 
 ### markers
 
@@ -212,6 +226,10 @@ getScale({
 - [地图组件][component]
 - [获取位置 - 小程序][location]
 - [地图组件控制][api.map]
+- [为何您的坐标不准？如何纠偏？][cnblog], by *酸奶小妹*
+- [WGS84 坐标转火星坐标（iOS 篇）][keakon], by 孙竞, 2011/07/02
+- [百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和WGS84坐标系互转][cnodejs], by *wandergis*
+- [坐标系说明书 - 百度地图开放平台][baidu.coordinate]
 
 [wgs84]: https://baike.baidu.com/item/WGS84/4380144
 [gcj02]: https://baike.baidu.com/item/GCJ-02/1913612
@@ -219,3 +237,7 @@ getScale({
 [component]: https://developers.weixin.qq.com/miniprogram/dev/component/map.html#map
 [location]: https://developers.weixin.qq.com/miniprogram/dev/api/location.html
 [api.map]: https://developers.weixin.qq.com/miniprogram/dev/api/api-map.html
+[cnblog]: http://www.cnblogs.com/milkmap/p/3627940.html
+[keakon]: https://www.keakon.net/2011/07/02/WGS84%E5%9D%90%E6%A0%87%E8%BD%AC%E7%81%AB%E6%98%9F%E5%9D%90%E6%A0%87%EF%BC%88iOS%E7%AF%87%EF%BC%89
+[cnodejs]: https://cnodejs.org/topic/564c0a27e4766d487f6fe38d
+[baidu.coordinate]: http://lbsyun.baidu.com/index.php?title=coordinate
