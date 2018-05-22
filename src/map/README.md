@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [🌍 使用地图组件](#-%E4%BD%BF%E7%94%A8%E5%9C%B0%E5%9B%BE%E7%BB%84%E4%BB%B6)
+  - [名词解释](#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A)
+    - [WGS84](#wgs84)
+    - [GCJ-02](#gcj-02)
+    - [火星坐标系统](#%E7%81%AB%E6%98%9F%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F)
+  - [组件](#%E7%BB%84%E4%BB%B6)
+    - [markers](#markers)
+  - [API](#api)
+    - [获取位置](#%E8%8E%B7%E5%8F%96%E4%BD%8D%E7%BD%AE)
+    - [查看位置](#%E6%9F%A5%E7%9C%8B%E4%BD%8D%E7%BD%AE)
+    - [地图组件控制](#%E5%9C%B0%E5%9B%BE%E7%BB%84%E4%BB%B6%E6%8E%A7%E5%88%B6)
+  - [REF](#ref)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 🌍 使用地图组件
 
 ## 名词解释
