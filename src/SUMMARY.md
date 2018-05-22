@@ -15,6 +15,7 @@
   - [录音管理](./api/getRcorderManager.md)
 - [登陆流程](./content/login-flow.md)
 - [支付流程](./content/payment.md)
+- [🌍 使用地图组件](./map/README.md)
 - [画布](./content/canvas/README.md)
 - [WXML 节点信息](./content/wxml-node/README.md)
 - [兼容处理](./content/compatibility.md)
