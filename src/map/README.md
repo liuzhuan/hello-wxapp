@@ -1,29 +1,29 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [🌍 使用地图组件](#-%E4%BD%BF%E7%94%A8%E5%9C%B0%E5%9B%BE%E7%BB%84%E4%BB%B6)
-  - [名词解释](#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A)
-    - [WGS84](#wgs84)
-    - [GCJ-02](#gcj-02)
-    - [火星坐标系统](#%E7%81%AB%E6%98%9F%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F)
-  - [组件](#%E7%BB%84%E4%BB%B6)
-    - [markers](#markers)
-  - [API](#api)
-    - [获取位置](#%E8%8E%B7%E5%8F%96%E4%BD%8D%E7%BD%AE)
-    - [查看位置](#%E6%9F%A5%E7%9C%8B%E4%BD%8D%E7%BD%AE)
-    - [地图组件控制](#%E5%9C%B0%E5%9B%BE%E7%BB%84%E4%BB%B6%E6%8E%A7%E5%88%B6)
-  - [REF](#ref)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # 🌍 使用地图组件
+
+**Table of Contents**
+
+- [名词解释](#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A)
+  - [WGS84](#wgs84)
+  - [GCJ-02](#gcj-02)
+  - [火星坐标系统](#%E7%81%AB%E6%98%9F%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F)
+- [组件](#%E7%BB%84%E4%BB%B6)
+  - [markers](#markers)
+- [API](#api)
+  - [获取位置](#%E8%8E%B7%E5%8F%96%E4%BD%8D%E7%BD%AE)
+  - [查看位置](#%E6%9F%A5%E7%9C%8B%E4%BD%8D%E7%BD%AE)
+  - [地图组件控制](#%E5%9C%B0%E5%9B%BE%E7%BB%84%E4%BB%B6%E6%8E%A7%E5%88%B6)
 
 ## 名词解释
 
 ### WGS84
 
-WGS84: World Geodetic System 1984，是为 GPS 全球定位系统使用而建立的坐标系统。通过遍布世界的卫星观测站观测到的坐标建立，其初次 WGS84 的精度为 1-2m，在 1994 年 1 月 2 号，通过 10 个观测站在 GPS 测量方法上改正，得到了 WGS84（G730），G 表示由 GPS 测量得到，730 表示为 GPS 时间第 730 个周。1996 年，National Imagery and Mapping Agency (NIMA) 为美国国防部 (U.S.Departemt of Defense, DoD)做了一个新的坐标系统。这样实现了新的 WGS 版本：WGS（G873）。其因为加入了 USNO 站和北京站的改正，其东部方向加入了 31-39cm 的改正。所有的其他坐标都有在 1 分米之内的修正。第三次精化：WGS84（G1150），于 2002 年 1 月 20 日启用。
+WGS84: World Geodetic System 1984，是为 GPS 全球定位系统使用而建立的坐标系统。通过遍布世界的卫星观测站观测到的坐标建立，其初次 WGS84 的精度为 1-2m。
+
+在 1994 年 1 月 2 号，通过 10 个观测站在 GPS 测量方法上改正，得到了 WGS84（G730），G 表示由 GPS 测量得到，730 表示为 GPS 时间第 730 个周。
+
+1996 年，National Imagery and Mapping Agency (NIMA) 为美国国防部 (U.S.Departemt of Defense, DoD)做了一个新的坐标系统。这样实现了新的 WGS 版本：WGS（G873）。其因为加入了 USNO 站和北京站的改正，其东部方向加入了 31-39cm 的改正。所有的其他坐标都有在 1 分米之内的修正。
+
+第三次精化：WGS84（G1150），于 2002 年 1 月 20 日启用。
 
 ### GCJ-02
 
