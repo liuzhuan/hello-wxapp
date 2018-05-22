@@ -27,7 +27,36 @@ GCJ-02 是由中国国家测绘局（G表示Guojia国家，C表示Cehui测绘，
 ```
 id: String 用于指定地图 ID
 show-location: Boolean 显示带有方向的当前定位点
+markers: Array 标记点
 ```
+
+### markers
+
+标记点用于在地图上显示标记的位置
+
+其属性包括：
+
+```js
+id: Number,
+latitude: Number,
+longitude: Number,
+title: String,
+iconPath: String,
+rotate: Number,
+// 标注的透明度，范围 0~1
+alpha: Number
+width: Number,
+height: Number,
+// 自定义标记点上方的气泡窗口
+callout: Object = { content, color, fontSize, borderRadius, bgColor, padding, display, textAlign },
+// 为标记点旁边增加标签
+label: Object = { content, color, fontSize, x, y, borderWidth, borderColor, borderRadius, bgColor, padding, textAlign },
+// 经纬度在标注图标的锚点，默认底边中点
+anchor: Object,
+```
+
+- `callout.display` 'BYCLICK' 点击显示；'ALWAYS' 常显
+- `callout.textAlign` 文本对齐方式，left, right, center
 
 ## API
 
