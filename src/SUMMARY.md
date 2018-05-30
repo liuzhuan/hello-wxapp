@@ -10,11 +10,13 @@
     - [组件间关系](./framework/custom-component/relations.md)
   - [分包加载](./framework/subpackages/README.md)
   - [多线程](./framework/workers/README.md)
-- [api](./api/README.md)
+- API
   - [打开 App](./api/launchApp.md)
   - [录音管理](./api/getRcorderManager.md)
-- [登陆流程](./content/login-flow.md)
-- [支付流程](./content/payment.md)
+- 常用流程
+  - [登陆流程](./content/login-flow.md)
+  - [支付流程](./content/payment.md)
+  - [🔑 授权流程](./authorize/README.md)
 - [🌍 使用地图组件](./map/README.md)
 - [画布](./content/canvas/README.md)
 - [WXML 节点信息](./content/wxml-node/README.md)
